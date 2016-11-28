@@ -1,0 +1,33 @@
+<h1>URL Shortener</h1>
+
+<div id="form-container">
+
+  <%= form_for(Link.new) do |f| %>
+    <%= f.text_field :long_url, placeholder: "Paste link here", id: "paste-link" %>
+
+    <%= f.submit 'SHORTEN', id: "shorten"%>
+  <% end %>
+
+</div>
+
+<% if @short_url %>
+
+  <div id="short-container">
+
+    <div id="short-label">
+      Short URL:
+    </div>
+
+    <!-- Target -->
+    <a href=<%= @short_url %> id='short-url'>
+      <%= @short_url %>
+    </a>
+
+    <!-- Trigger -->
+    <button id="copy-button" data-clipboard-action="copy" data-clipboard-target="#short-url">
+      Copy to clipboard
+    </button>
+
+  </div>
+
+<% end %>
