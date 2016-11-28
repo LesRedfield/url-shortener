@@ -1,5 +1,6 @@
-== URL Shortener
+#URL Shortener
 
-The functionality is similar to bit.ly.  A user should be presented with an input to
-enter a url and a button to submit.  Once they submit their URL (e.g. http://somedomain.com/some-super-long-url)
-they should receive a shortened urls (e.g. http://localhost:3000/short_url).
+The functionality is similar to bit.ly, run locally on a user's machine.
+
+A user enters a url and submits (e.g. http://somedomain.com/some-super-long-url),
+then receives a shortened url (e.g. http://localhost:3000/short_url).
