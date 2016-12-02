@@ -9,7 +9,8 @@ class LinksController < ApplicationController
       @short_url = "http://localhost:3000/" + @link.short_url
       render :new
     else
-      render json: @link.errors
+      flash.now[:errors] = @link.errors.full_messages
+      render :new
     end
   end
 

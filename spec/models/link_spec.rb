@@ -43,9 +43,6 @@ RSpec.describe Link, type: :model do
       it "parses domain abbreviation for other urls" do
         expect(other.short_url[0, 3]).to eq('les')
       end
-
     end
-
   end
-
 end
