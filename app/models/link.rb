@@ -1,5 +1,7 @@
 class Link < ActiveRecord::Base
 
+  validates :long_url, length: { minimum: 6 }
+
   after_create :generate_short_url
 
   def generate_short_url
