@@ -19,7 +19,6 @@ RSpec.describe Link, type: :model do
     end
 
     context "parses domain abbreviations correctly" do
-
       it "parses domain abbreviation for 'https://www.' urls" do
         expect(hsw.short_url[0, 3]).to eq('lin')
       end

@@ -12,7 +12,6 @@ RSpec.describe LinksController, type: :controller do
   end
 
   describe "POST #create" do
-
     context "with invalid params" do
       it "validates the length of long_url" do
         post :create, link: { long_url: "short" }
